@@ -1,0 +1,10 @@
+<% @posts.each do |post| %>
+    id : <%= post.id %>
+    title : <%= post.title %>
+    content : <%= post.content %>
+    created_at : <%= post.created_at %>
+    <a href="/posts/show/<%= post.id %>">이동</a>
+    <hr>
+<% end %>
+
+<a href="/posts/new">새 글 쓰러가기</a>
